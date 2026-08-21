@@ -1,0 +1,2227 @@
+---
+import Header from "../components/Header.astro";
+
+const facebookUrl = "https://www.facebook.com/profile.php?id=61588407723104";
+
+const products = [
+
+
+ 
+  
+  {
+    brand: "Oakley",
+    name: "Pitchman",
+    model: "OX3218 Socket 5.5",
+    type: "Size:54-18-136",
+    price: 135,
+    color: "Mat midnight",
+    gender: "Men",
+    image: "/glasses/oakley-ox3218-socket-55-mat-midnight.png",
+  },
+
+
+  {
+    brand: "Oakley",
+    name: "Pitchman",
+    model: "OY8005-0247",
+    type: "Size:47-17-125",
+    price: 135,
+    color: "Satin Grey Smoke",
+    gender: "Men",
+    image: "/glasses/oakley-oy8005-0247-satin-grey-smoke.png",
+  },
+
+  {
+    brand: "Oakley",
+    name: "Pitchman",
+    model: "OX8081-0149 Plank 2.0",
+    type: "Size:49-18-135",
+    price: 135,
+    color: "Satin Black",
+    gender: "Men",
+    image: "/glasses/oakley-ox8081-0149-plank-20-satin-black.png",
+  },
+
+
+
+  {
+    brand: "Gucci",
+    name: "GG Classic Optical",
+    model: "GG0062S",
+    type: "Size:57-17-140",
+    price: 249,
+    color: "Gold",
+    gender: "Women",
+    image: "/glasses/gucci-gg0062s-gold.png",
+  },
+  {
+    brand: "Prada",
+    name: "PR Minimalist",
+    model: "VPR 54T",
+    type: "Size:57-19-150",
+    price: 229,
+    color: "Black",
+    gender: "Women",
+    image: "/glasses/prada-vpr-54t-black.png",
+  },
+
+  {
+    brand: "Prada",
+    name: "PR Minimalist",
+    model: "VPR V10",
+    type: "Size:55-17-150",
+    price: 229,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/pradav-pr-V10.jpg",
+  },
+
+
+{
+    brand: "Prada",
+    name: "PR Minimalist",
+    model: "PR 09WV",
+    type: "Size:54-18-140",
+    price: 229,
+    color: "tortoise",
+    gender: "Men",
+    image: "/glasses/Prada-PR 09WV.png",
+  },
+{
+    brand: "Prada",
+    name: "PR Minimalist",
+    model: "VPS50G",
+    type: "Size:55-17-140",
+    price: 229,
+    color: "Blue",
+    gender: "Women",
+  },
+
+  {
+    brand: "Carera",
+    name: "PR Minimalist",
+    model: "Columbia C8032",
+    type: "Size:58-18-150",
+    price: 229,
+    color: "Dark Green",
+    gender: "Women",
+    image: "/glasses/carera-columbia-c8032-dark-green.png",
+  },
+
+  {
+    brand: "Columbia",
+    name: "PR Minimalist",
+    model: "C3050N",
+    type: "Size:50-60-150",
+    price: 229,
+    color: "Black",
+    gender: "Women",
+    image: "/glasses/columbia-c3050n-black.png",
+  },
+
+
+
+  {
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+
+  {
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE-1264",
+    type: "Size:54-18-140",
+    price: 269,
+    color: "Black&Gold",
+    gender: "Men",
+  },
+
+  {
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE1199",
+    type: "Size:51-17-135",
+    price: 269,
+    color: "RoseGold",
+    gender: "Men",
+  },
+
+  {
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE3163",
+    type: "Size:52-17-140",
+    price: 269,
+    color: "992",
+    gender: "Men",
+  },
+
+  {
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE3293",
+    type: "Size:58-13-140",
+    price: 269,
+    color: "Tortuise",
+    gender: "Men",
+  },
+
+
+
+
+  {
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE-1038",
+    type: "Size:52-17-140",
+    price: 269,
+    color: "Brown",
+    gender: "Men",
+  },
+
+{
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE1274",
+    type: "Size:55-17-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+
+
+
+{
+    brand: "Versace",
+    name: "Rectangle Metal Frame",
+    model: "VE-1287",
+    type: "Size:57-13-145",
+    price: 269,
+    color: "Gold",
+    gender: "Men",
+  },
+
+
+
+   {
+    brand: "Prada",
+    name: "Bold Square Frame",
+    model: "VPR14W",
+    type: "Size:54-18-145",
+    price: 269,
+    color: "Smokegray",
+    gender: "Men",
+    image: "/glasses/prada-vpr14w-smokegray.png",
+  },
+
+
+
+  {
+    brand: "Burberry",
+    name: "Bold Square Frame",
+    model: "BE2108",
+    type: "Size:54-16-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/be2109-transparent.png",
+  },
+
+   {
+    brand: "Burberry",
+    name: "Bold Square Frame",
+    model: "BE2417",
+    type: "Size:53-21-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/be2417-transparent.png",
+  },
+
+
+  {
+    brand: "Dolce & Gabanna",
+    name: "Bold Square Frame",
+    model: "DG3419",
+    type: "Size:54-19-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/dolce-gabanna-dg3419-black.png",
+  },
+
+   {
+    brand: "Dolce & Gabanna",
+    name: "Bold Square Frame",
+    model: "DG5031",
+    type: "Size:51-19-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/dolce-gabanna-dg5031-black.png",
+  },
+
+
+{
+    brand: "Dolce & Gabanna",
+    name: "Bold Square Frame",
+    model: "DG3309",
+    type: "Size:52-21-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/dolce-gabanna-dg3309-black.png",
+  },
+  {
+    brand: "Cole Haan",
+    name: "Bold Square Frame",
+    model: "CH5028",
+    type: "Size:50-20-135",
+    price: 269,
+    color: "Taupe crystal",
+    gender: "Men",
+    image: "/glasses/cole-haan-ch5028-taupe-crystal.png",
+  },
+  
+
+  {
+    brand: "Silhouette",
+    name: "Bold Square Frame",
+    model: "SPX2942 5610",
+    type: "Size:56-15-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-spx2942-5610-black.png",
+  },
+
+
+  {
+    brand: "Silhouette",
+    name: "Bold Square Frame",
+    model: "5521 FA6140",
+    type: "Size:49-19",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-5521-fa6140-black.png",
+  },
+
+  {
+    brand: "Silhouette",
+    name: "Bold Square Frame",
+    model: "5521 FB5040",
+    type: "Size:52-17",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-5521-fb5040-black.png",
+  },
+
+  {
+    brand: "Silhouette",
+    model: "SPX1606 75 3500",
+    type: "Size:54-16",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-spx1606-75-3500-black.png",
+  },
+
+{
+    brand: "Silhouette",
+    name: "FA",
+    model: "5515 70 4540",
+    type: "Size:54-16",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-5515-70-4540-black.png",
+  },
+
+  {
+    brand: "Silhouette",
+    name: "NI",
+    model: "5599 7530",
+    type: "Size:54-16",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-5599-7530-black.png",
+  },
+
+  {
+    brand: "Silhouette",
+    name: "CF",
+    model: "5540 70 9040",
+    type: "Size:54-16",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-5540-70-9040-black.png",
+  },
+
+{
+    brand: "Silhouette",
+    name: "FA",
+    model: "5500 70 3040 BD",
+    type: "Size:54-16",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-5500-70-3040-bd-black.png",
+  },
+
+{
+    brand: "Silhouette",
+    name: "FA",
+    model: "5561 BS 6040",
+    type: "Size:54-16",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/silhouette-5561-bs-6040-black.png",
+  },
+
+  {
+    brand: "Vogue Eyewear",
+    name: "Bold Square Frame",
+    model: "VO5053",
+    type: "Size:53-16-135",
+    price: 269,
+    color: "Tortuise",
+    gender: "Men",
+  },
+
+{
+    brand: "Vogue",
+    name: "Bold Square Frame",
+    model: "VO5",
+    type: "Size:53-17-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+
+  {
+    brand: "Versace",
+    name: "Bold Square Frame",
+    model: "VE1199",
+    type: "Size:51-17-135",
+    price: 269,
+    color: "RoseGold",
+    gender: "Men",
+  },
+
+
+  {
+    brand: "Polo Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "PH2233",
+    type: "Size:58-17-150",
+    price: 269,
+    color: "Smoke Transparent",
+    gender: "Men",
+    image: "/glasses/polo-ralph-lauren-ph2233-smoke-transparent.png",
+  },
+
+
+  {
+    brand: "Polo Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "PH2123",
+    type: "Size:56-17-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/polo-ralph-lauren-ph2123-black.png",
+  },
+
+   {
+    brand: "Polo Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "",
+    type: "Size:46-14-140",
+    price: 269,
+    color: "Tortouise",
+    gender: "Men",
+    image: "/glasses/polo-ralph-lauren-unknown-model-tortouise.png",
+  },
+
+
+
+   {
+    brand: "Police",
+    name: "Bold Square Frame",
+    model: "Brooklyn 5 VPL394N",
+    type: "Size:54-17-140",
+    price: 269,
+    color: "Gun metal",
+    gender: "Men",
+    image: "/glasses/police-brooklyn-5-vpl394n-gun-metal.png",
+  },
+
+   {
+    brand: "Tom Ford",
+    name: "Bold Square Frame",
+    model: "TF5661-B-9",
+    type: "Size:54-180-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/tom-ford-tf5661-b-9-black.png",
+  },
+
+
+
+
+{
+    brand: "Polo Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "PH1222",
+    type: "Size:54-18-145",
+    price: 269,
+    color: "Gun metal",
+    gender: "Men",
+    image: "/glasses/polo-ralph-lauren-ph1222-gun-metal.png",
+  },
+
+
+
+{
+    brand: "Brook Brothers",
+    name: "Bold Square Frame",
+    model: "BB363",
+    type: "Size:50-19-140",
+    price: 269,
+    color: "Silver",
+    gender: "Men",
+    image: "/glasses/bb363-transparent.png",
+  },
+
+  {
+    brand: "Armani Exchange",
+    name: "Bold Square Frame",
+    model: "AX3050",
+    type: "Size:53-13-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/ax3050-transparent.png",
+  },
+
+
+{
+    brand: "Armani Exchange",
+    name: "Bold Square Frame",
+    model: "AX3116",
+    type: "Size:55-17-145",
+    price: 269,
+    color: "Gray",
+    gender: "Men",
+    image: "/glasses/ax3116-transparent.png",
+  },
+
+
+  {
+    brand: "Armani Exchange",
+    name: "Bold Square Frame",
+    model: "AX3029 Dark Blue",
+    type: "Size:54-17-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/ax3029-dark-blue-transparent.png",
+  },
+
+  {
+    brand: "Armani Exchange",
+    name: "Bold Square Frame",
+    model: "AX1019",
+    type: "Size:54-14-140",
+    price: 269,
+    color: "Gun metal",
+    gender: "Men",
+    image: "/glasses/ax1019-transparent.png",
+  },
+
+  {
+    brand: "Emporio Armani",
+    name: "Bold Square Frame",
+    model: "EA1027",
+    type: "Size:55-18-140",
+    price: 269,
+    color: "Gray",
+    gender: "Men",
+    image: "/glasses/emporio-armani-ea1027-gray.png",
+  },
+
+
+  {
+    brand: "Emporio Armani",
+    name: "Bold Square Frame",
+    model: "EA11143",
+    type: "Size:55-18-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/emporio-armani-ea11143-black.png",
+  },
+  
+  {
+    brand: "Calvin Klein",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+
+
+{
+    brand: "Calvin Klein",
+    name: "Bold Square Frame",
+    model: "CK5938",
+    type: "Size:50-18-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/calvin-klein-ck5938-black.png",
+  },
+
+
+  {
+    brand: "Calvin Klein",
+    name: "Bold Square Frame",
+    model: "CK19105",
+    type: "Size:52-19-140",
+    price: 269,
+    color: "Silver",
+    gender: "Men",
+    image: "/glasses/calvin-klein-ck19105-silver.png",
+  },
+
+
+  {
+    brand: "Calvin Klein",
+    name: "Bold Square Frame",
+    model: "CK21502",
+    type: "Size:53-19-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/calvin-klein-ck21502-black.png",
+  },
+
+  {
+    brand: "Calvin Klein",
+    name: "Bold Square Frame",
+    model: "CK181511",
+    type: "Size:53-17-140",
+    price: 269,
+    color: "Tortuise",
+    gender: "Men",
+    image: "/glasses/calvin-klein-ck181511-tortuise.png",
+  },
+
+
+
+{
+    brand: "Guess",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/guess-ve-4410-black.png",
+
+  },
+
+  {
+    brand: "Guess",
+    name: "Bold Square Frame",
+    model: "GU5222",
+    type: "Size:50-18-145",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/guess-gu5222-black.png",
+
+  },
+
+{
+    brand: "Prada",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/prada-ve-4410-black.png",
+  },
+
+{
+    brand: "Flexon",
+    name: "Bold Square Frame",
+    model: "E1111",
+    type: "Size:54-17-140",
+    price: 269,
+    color: "Dark Blue",
+    gender: "Men",
+    image: "/glasses/flexon-e1111-dark-blue.png",
+  },
+
+
+{
+    brand: "Flexon",
+    name: "Bold Square Frame",
+    model: "F607",
+    type: "Size:51-20-145",
+    price: 269,
+    color: "Brown",
+    gender: "Men",
+    image: "/glasses/flexon-f607-brown.png",
+  },
+
+  {
+    brand: "Flexon",
+    name: "Bold Square Frame",
+    model: "Clark 600",
+    type: "Size:52-19-140",
+    price: 269,
+    color: "Gun metal",
+    gender: "Men",
+    image: "/glasses/flexon-clark-600-gun-metal.png",
+  }
+  
+  
+  ,{
+    brand: "Michael Kors",
+    name: "Bold Square Frame",
+    model: "MK4119U",
+    type: "Size:53-17-140",
+    price: 269,
+    color: "Nassau 3005",
+    gender: "Women",
+    image: "/glasses/michael-kors-mk4119u-nassau-3005.png",
+    
+  },
+  {
+    brand: "Michael Kors",
+    name: "Bold Square Frame",
+    model: "MK4060U",
+    type: "54-15-140",
+    price: 269,
+    color: "Telluride",
+    gender: "Women",
+    image: "/glasses/michael-kors-mk4060u-telluride.png",
+    size: "54",
+    
+  },
+
+{
+    brand: "Michael Kors",
+    name: "Bold Square Frame",
+    model: "MK4101U Shenandoah",
+    type: "Size:53-16-140",
+    price: 269,
+    color: "Telluride",
+    gender: "Women",
+    image: "/glasses/michael-kors-mk4101u-shenandoah-telluride.png",
+    size: "54",
+    
+  },
+
+  {
+    brand: "Just Cavalli",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/just-cavalli-ve-4410-black.png",
+  },
+  {
+    brand: "Tiffany & Co",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+    image: "/glasses/tiffany-co-ve-4410-black.png",
+  },
+
+  {
+    brand: "Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "RA6048",
+    type: "Size:55-16-140",
+    price: 269,
+    color: "Gold",
+    gender: "Men",
+    image: "/glasses/ralph-lauren-ra6048-gold.png",
+  },
+
+{
+    brand: "Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "RA67088",
+    type: "Size:53-16-140",
+    price: 269,
+    color: "Pink",
+    gender: "Men",
+    image: "/glasses/ralph-lauren-ra67088-pink.png",
+  },
+
+
+{
+    brand: "Kate Spada",
+    name: "Bold Square Frame",
+    model: "Analena W79",
+    type: "Size:52-17-135",
+    price: 269,
+    color: "Tortuise",
+    gender: "Men",
+    image: "/glasses/kate-spada-analena-w79-tortoise.png",
+  },
+
+  {
+    brand: "Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "RL5089",
+    type: "Size:54-18-140",
+    price: 269,
+    color: "Gun Metal",
+    gender: "Men",
+    image: "/glasses/ralph-lauren-rl5089-gun-metal.png",
+  },
+
+  {
+    brand: "Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "RL5099",
+    type: "Size:55-16-140",
+    price: 269,
+    color: "9324",
+    gender: "Men",
+    image: "/glasses/ralph-lauren-rl5099-9324.png",
+  },
+
+  {
+    brand: "Ralph Lauren",
+    name: "Bold Square Frame",
+    model: "PH2233",
+    type: "Size:50-20-145",
+    price: 269,
+    color: "Taupe",
+    gender: "Men",
+    image: "/glasses/ralph-lauren-ph2233-taupe.png",
+  },
+
+ 
+
+  {
+    brand: "Liu Jo",
+    name: "Bold Square Frame",
+    model: "LJ2291",
+    type: "Size:52-16-140",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+  {
+    brand: "Longchamp",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+  {
+    brand: "Coach",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+
+  {
+    brand: "Jimmy Choo",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+  {
+    brand: "Juicy Couture",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+  {
+    brand: "DKNY",
+    name: "Bold Square Frame",
+    model: "VE-4410",
+    type: "Luxury",
+    price: 269,
+    color: "Black",
+    gender: "Men",
+  },
+
+  {
+    brand: "Juicy Couture",
+    name: "Juicy Couture Frame",
+    model: "JU?5",
+    type: "Size:52-17-140",
+    price: 0,
+    color: "Green",
+    gender: "Unisex",
+  }
+  
+  ,
+  {
+    brand: "Coach",
+    name: "Coach Frame",
+    model: "HC6187",
+    type: "Size:52-18-140",
+    price: 0,
+    color: "Sea / Milky Beige",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RL5099",
+    type: "Size:55-16-140",
+    price: 0,
+    color: "Red Gold",
+    gender: "Unisex",
+  },
+  {
+    brand: "Dolce & Gabbana",
+    name: "Dolce & Gabbana Frame",
+    model: "DG3397",
+    type: "Size:56-16-140",
+    price: 0,
+    color: "Black",
+    gender: "Unisex",
+    image: "/glasses/dolce-gabbana-dg3397-black.png",
+  },
+  {
+    brand: "Liu Jo",
+    name: "Liu Jo Frame",
+    model: "LJ2660H",
+    type: "Size:52-16-140",
+    price: 0,
+    color: "Burgundy",
+    gender: "Unisex",
+  },
+  {
+    brand: "Michael Kors",
+    name: "Michael Kors Frame",
+    model: "MK4060U",
+    type: "Size:53-15-135",
+    price: 0,
+    color: "Teal Nude",
+    gender: "Unisex",
+    image: "/glasses/michael-kors-mk4060u-teal-nude.png",
+  },
+  {
+    brand: "Michael Kors",
+    name: "Michael Kors Frame",
+    model: "MK4106U",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "Westport / Ice",
+    gender: "Unisex",
+    image: "/glasses/michael-kors-mk4106u-westport-ice.png",
+  },
+  {
+    brand: "Burberry",
+    name: "Burberry Frame",
+    model: "BE2201",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "Rose / Tort",
+    gender: "Unisex",
+  },
+  {
+    brand: "Tiffany",
+    name: "Tiffany Frame",
+    model: "TF4023",
+    type: "Size:52-17-140",
+    price: 0,
+    color: "Tort",
+    gender: "Unisex",
+    image: "/glasses/tiffany-tf4023-tort.png",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RL6205",
+    type: "Size:54-16-130",
+    price: 0,
+    color: "805/3B",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RA7044",
+    type: "Size:55-16-140",
+    price: 0,
+    color: "1038 Tort",
+    gender: "Unisex",
+  },
+  {
+    brand: "Just Cavalli",
+    name: "Just Cavalli Frame",
+    model: "JC0810",
+    type: "Size:52-16-135",
+    price: 0,
+    color: "Black",
+    gender: "Unisex",
+    image: "/glasses/just-cavalli-jc0810-black.png",
+  },
+  {
+    brand: "Versace",
+    name: "Versace Frame",
+    model: "VE3305",
+    type: "Size:52-16-140",
+    price: 0,
+    color: "Black",
+    gender: "Unisex",
+  },
+  {
+    brand: "Tiffany",
+    name: "Tiffany Frame",
+    model: "TF2109-HB",
+    type: "Size:55-17-140",
+    price: 0,
+    color: "Shiny 3028",
+    gender: "Unisex",
+    image: "/glasses/tiffany-tf2109-hb-shiny-3028.png",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RA7044",
+    type: "Size:55-17-140",
+    price: 0,
+    color: "Blue",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ray-Ban",
+    name: "Ray-Ban Frame",
+    model: "RB7044",
+    type: "Size:53-17-140",
+    price: 0,
+    color: "1038 Tort",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Elliot",
+    model: "PH217?",
+    type: "Size:52-18-135",
+    price: 0,
+    color: "1356/3U",
+    gender: "Unisex",
+  },
+  {
+    brand: "Dolce & Gabbana",
+    name: "Dolce & Gabbana Frame",
+    model: "PH217?",
+    type: "Size:52-19-145",
+    price: 0,
+    color: "5636",
+    gender: "Unisex",
+    image: "/glasses/dolce-gabbana-ph217-5636.png",
+  },
+  {
+    brand: "Guess",
+    name: "Guess Frame",
+    model: "GU2414",
+    type: "Size:50-20-145",
+    price: 0,
+    color: "Blue / Ice",
+    gender: "Unisex",
+    image: "/glasses/guess-gu2414-blue-ice.png",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RA7116",
+    type: "Size:53-15-140",
+    price: 0,
+    color: "Blue 5848",
+    gender: "Unisex",
+  },
+  {
+    brand: "Longchamp",
+    name: "Longchamp Frame",
+    model: "LO2613",
+    type: "Size:54-16-145",
+    price: 0,
+    color: "513",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ray-Ban",
+    name: "Ray-Ban Frame",
+    model: "RB7159",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "2012",
+    gender: "Unisex",
+  },
+
+  {
+    brand: "Longchamp",
+    name: "Longchamp Frame",
+    model: "LO2687",
+    type: "Size:52-17-140",
+    price: 0,
+    color: "615",
+    gender: "Unisex",
+  },
+  {
+    brand: "Vogue",
+    name: "Vogue Frame",
+    model: "VO4271-B",
+    type: "Size:52-16-135",
+    price: 0,
+    color: "5078",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RA6051",
+    type: "Size:54-18-140",
+    price: 0,
+    color: "9036",
+    gender: "Unisex",
+  },
+  {
+    brand: "Tory Burch",
+    name: "Tory Burch Frame",
+    model: "TY9063U",
+    type: "Size:56-19-140",
+    price: 0,
+    color: "Tort",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ray-Ban",
+    name: "Ray-Ban Frame",
+    model: "RB6465",
+    type: "Size:51-20-140",
+    price: 0,
+    color: "Black 3126",
+    gender: "Unisex",
+  },
+  {
+    brand: "Prada",
+    name: "Prada Frame",
+    model: "VPR61X",
+    type: "Size:54-17-145",
+    price: 0,
+    color: "Burgundy",
+    gender: "Unisex",
+    image: "/glasses/prada-vpr61x-burgundy.png",
+  },
+  {
+    brand: "Prada",
+    name: "Prada Frame",
+    model: "VPR15X",
+    type: "Size:53-17-140",
+    price: 0,
+    color: "Red",
+    gender: "Unisex",
+    image: "/glasses/prada-vpr15x-red.png",
+  },
+  {
+    brand: "Prada",
+    name: "Prada Frame",
+    model: "VPR15X",
+    type: "Size:53-15-140",
+    price: 0,
+    color: "Blue",
+    gender: "Unisex",
+    image: "/glasses/prada-vpr15x-blue.png",
+  },
+  {
+    brand: "Guess",
+    name: "Guess Frame",
+    model: "GU2795",
+    type: "Size:54-14-140",
+    price: 0,
+    color: "White Gold 002",
+    gender: "Unisex",
+    image: "/glasses/guess-gu2795-white-gold-002.png",
+  },
+  {
+    brand: "Dolce & Gabbana",
+    name: "Dolce & Gabbana Frame",
+    model: "DG3308",
+    type: "Size:53-18-145",
+    price: 0,
+    color: "Red Burgundy 3202",
+    gender: "Unisex",
+    image: "/glasses/dolce-gabbana-dg3308-red-burgundy-3202.png",
+  },
+  {
+    brand: "Burberry",
+    name: "Burberry Frame",
+    model: "BE2347",
+    type: "Size:50-18-140",
+    price: 0,
+    color: "3944",
+    gender: "Unisex",
+  },
+  {
+    brand: "Tiffany",
+    name: "Tiffany Frame",
+    model: "TF2207",
+    type: "Size:52-15-140",
+    price: 0,
+    color: "Black 8055",
+    gender: "Unisex",
+    image: "/glasses/tiffany-tf2207-black-8055.png",
+  },
+  {
+    brand: "Tiffany",
+    name: "Tiffany Frame",
+    model: "TF2109-HB",
+    type: "Size:51-17-140",
+    price: 0,
+    color: "Black 8134",
+    gender: "Unisex",
+    image: "/glasses/tiffany-tf2109-hb-black-8134.png",
+  },
+  {
+    brand: "Armani Exchange",
+    name: "Armani Exchange Frame",
+    model: "AX1023",
+    type: "Size:53-17-145",
+    price: 0,
+    color: "Blue 6097",
+    gender: "Unisex",
+    image: "/glasses/ax1023-transparent.png",
+  },
+  {
+    brand: "Longchamp",
+    name: "Longchamp Frame",
+    model: "LO2661N",
+    type: "Size:54-15-140",
+    price: 0,
+    color: "Tort",
+    gender: "Unisex",
+  },
+  {
+    brand: "Coach",
+    name: "Coach Frame",
+    model: "HC6248U",
+    type: "Size:52-16-140",
+    price: 0,
+    color: "Milky Violet Floral",
+    gender: "Unisex",
+  },
+  {
+    brand: "Burberry",
+    name: "Burberry Frame",
+    model: "BE2205",
+    type: "Size:52-17-145",
+    price: 0,
+    color: "Brown Tort 300",
+    gender: "Unisex",
+  },
+  {
+    brand: "Jimmy Choo",
+    name: "Jimmy Choo Frame",
+    model: "JC3001B",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "Black 5000",
+    gender: "Unisex",
+  },
+  {
+    brand: "DKNY",
+    name: "DKNY Frame",
+    model: "DK5013",
+    type: "Size:52-17-135",
+    price: 0,
+    color: "320",
+    gender: "Unisex",
+  },
+  {
+    brand: "Versace",
+    name: "Versace Frame",
+    model: "VE3112",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "B1A",
+    gender: "Unisex",
+  },
+  {
+    brand: "Coach",
+    name: "Coach Frame",
+    model: "HC8305",
+    type: "Size:57-16-140",
+    price: 0,
+    color: "Pink Tort",
+    gender: "Unisex",
+  },
+
+  {
+    brand: "Vogue",
+    name: "Vogue Frame",
+    model: "VO3955-S",
+    type: "Size:52-17-135",
+    price: 0,
+    color: "Burgundy",
+    gender: "Unisex",
+  },
+  {
+    brand: "DKNY",
+    name: "DKNY Frame",
+    model: "DK3002",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "Green / Blue",
+    gender: "Unisex",
+  },
+  {
+    brand: "Michael Kors",
+    name: "Michael Kors Frame",
+    model: "MK3002",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "Melon",
+    gender: "Unisex",
+  },
+  {
+    brand: "Prada",
+    name: "Prada Frame",
+    model: "VPR15P",
+    type: "Size:53-16-135",
+    price: 0,
+    color: "Nude 2YY-101",
+    gender: "Unisex",
+    image: "/glasses/prada-vpr15p-nude-2yy-101.png",
+  },
+  {
+    brand: "Scott Harris",
+    name: "Scott Harris Frame",
+    model: "SH-400",
+    type: "Size:52-17-135",
+    price: 0,
+    color: "Purple",
+    gender: "Unisex",
+  },
+  {
+    brand: "L.A.M.B.",
+    name: "L.A.M.B. Frame",
+    model: "LA090",
+    type: "Size:54-16-140",
+    price: 0,
+    color: "Mulch",
+    gender: "Unisex",
+  },
+  {
+    brand: "Versace",
+    name: "Versace Frame",
+    model: "VE3168-B",
+    type: "Size:52-17-135",
+    price: 0,
+    color: "Tort",
+    gender: "Unisex",
+  },
+  {
+    brand: "Vogue",
+    name: "Vogue Frame",
+    model: "VO5805",
+    type: "Size:51-18-135",
+    price: 0,
+    color: "2406",
+    gender: "Unisex",
+  },
+  {
+    brand: "Vogue",
+    name: "Vogue Frame",
+    model: "VO5102",
+    type: "Size:51-17-135",
+    price: 0,
+    color: "Purple 3409",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RA7044",
+    type: "Size:52-18-135",
+    price: 0,
+    color: "Tort 1008",
+    gender: "Unisex",
+  },
+  {
+    brand: "Armani Exchange",
+    name: "Armani Exchange Frame",
+    model: "AX3114",
+    type: "Size:54-16-140",
+    price: 0,
+    color: "Blue",
+    gender: "Unisex",
+    image: "/glasses/ax3114-transparent.png",
+     },
+  {
+    brand: "Versace",
+    name: "Cat-Eye Acetate Frame",
+    model: "VE3292",
+    type: "Size:54-18-140",
+    price: 0,
+    color: "Red",
+    gender: "Unisex",
+  },
+  {
+    brand: "DKNY",
+    name: "DKNY Frame",
+    model: "DY4561",
+    type: "Size:52-16-140",
+    price: 0,
+    color: "Tort 2020",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RA5301U",
+    type: "Size:52-21-145",
+    price: 0,
+    color: "Black 5001",
+    gender: "Unisex",
+  },
+  {
+    brand: "Ralph Lauren",
+    name: "Ralph Lauren Frame",
+    model: "RA7174U",
+    type: "Size:52-17-145",
+    price: 0,
+    color: "Pink 5575",
+    gender: "Unisex",
+  },
+  {
+    brand: "Vogue",
+    name: "Vogue Frame",
+    model: "VO3918",
+    type: "Size:48-19-140",
+    price: 0,
+    color: "Black",
+    gender: "Unisex",
+  },
+  {
+    brand: "Tory Burch",
+    name: "Tory Burch Frame",
+    model: "TY2067",
+    type: "Size:52-17-135",
+    price: 0,
+    color: "Black",
+    gender: "Unisex",
+  },
+  {
+    brand: "Gucci",
+    name: "Gucci Frame",
+    model: "GG1340",
+    type: "Size:54-17-140",
+    price: 0,
+    color: "Tort 002",
+    gender: "Unisex",
+    image: "/glasses/gucci-gg1340-tort-002.png",
+  },
+];
+
+
+const brands = [...new Set(products.map((product) => product.brand))];
+
+const brandCounts = brands
+  .map((brand) => ({
+    brand,
+    count: products.filter((product) => product.brand === brand).length,
+  }))
+  .sort((a, b) => a.brand.localeCompare(b.brand));
+
+console.log("\nEyeglass inventory count by brand:");
+console.table(brandCounts);
+console.log("Total frames:", products.length);
+
+
+---
+
+<html lang="en">
+  <head>
+    <title>Catalog | Eyeglass Wearhouse1, LLC</title>
+    <meta
+      name="description"
+      content="Browse eyeglass brands and frame options from Eyeglass Wearhouse1, LLC."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <section class="catalog-top">
+        <div>
+          <p class="eyebrow">Catalog</p>
+          <h1>Browse Frames</h1>
+          <p>
+            Search for the glasses you desire
+          </p>
+        </div>
+      </section>
+
+      <section class="catalog-layout">
+        <aside class="sidebar">
+          <div class="filter-block">
+            <div class="filter-title">
+              <h2>Brand</h2>
+              <button type="button" class="clear-btn" id="clearFilters">
+                Clear
+              </button>
+            </div>
+
+            <div class="filter-list">
+              {
+                brands.map((brand) => (
+                  <label>
+                    <input type="checkbox" value={brand} data-filter="brand" />
+                    <span>{brand}</span>
+                  </label>
+                ))
+              }
+            </div>
+          </div>
+
+
+          <div class="filter-block">
+            <h2>Price</h2>
+
+            <div class="filter-list">
+              <label>
+                <input type="checkbox" value="under150" data-filter="price" />
+                <span>Under $150</span>
+              </label>
+
+              <label>
+                <input type="checkbox" value="150to240" data-filter="price" />
+                <span>$150 - $240</span>
+              </label>
+
+              <label>
+                <input type="checkbox" value="over240" data-filter="price" />
+                <span>Over $240</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <section class="products-area">
+          <div class="toolbar">
+            <div class="search-wrap">
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="Search by brand, model, or keyword"
+              />
+            </div>
+
+            <div class="sort-wrap">
+              <label for="sortSelect">Sort By</label>
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="priceLow">Price: Low to High</option>
+                <option value="priceHigh">Price: High to Low</option>
+                <option value="brandAZ">Brand: A-Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="results-line">
+            <span id="resultCount">{products.length}</span> frames available
+          </div>
+
+          <div class="product-grid" id="productGrid">
+            {
+              products.map((product) => (
+                <article
+                  class="product-card"
+                  data-brand={product.brand}
+                  data-gender={product.gender}
+                  data-price={product.price}
+                  data-search={`${product.brand} ${product.name} ${product.model} ${product.type} ${product.color}`}
+                >
+                  <div class="product-image">
+  <img src={product.image} alt={`${product.brand} ${product.name}`} />
+</div>
+
+                  <div class="product-info">
+                    <p class="brand-name">{product.brand}</p>
+                    <h3>{product.name}</h3>
+
+                    <div class="product-meta">
+                      <span>{product.model}</span>
+                      <span>{product.type}</span>
+                    </div>
+
+                    <div class="details">
+                      <div>
+                        <small>Color</small>
+                        <strong>{product.color}</strong>
+                      </div>
+
+                      <div>
+                        <small>Gender</small>
+                        <strong>{product.gender}</strong>
+                      </div>
+                    </div>
+
+                    <div class="product-footer">
+                      <strong>${product.price}</strong>
+                      <a href={facebookUrl} target="_blank">
+                        Ask About This
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+
+          <p class="empty-message" id="emptyMessage">
+            No frames match those filters.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <script>
+  const checkboxes = Array.from(
+    document.querySelectorAll("input[type='checkbox']")
+  );
+  const searchInput = document.querySelector("#searchInput");
+  const sortSelect = document.querySelector("#sortSelect");
+  const clearButton = document.querySelector("#clearFilters");
+  const productGrid = document.querySelector("#productGrid");
+  const cards = Array.from(document.querySelectorAll(".product-card"));
+  const resultCount = document.querySelector("#resultCount");
+  const emptyMessage = document.querySelector("#emptyMessage");
+
+  function getCheckedValues(filterName) {
+    return checkboxes
+      .filter((checkbox) => checkbox.dataset.filter === filterName)
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value);
+  }
+
+  function matchesPrice(card, selectedPrices) {
+    if (selectedPrices.length === 0) return true;
+
+    const price = Number(card.dataset.price);
+
+    return selectedPrices.some((range) => {
+      if (range === "under150") return price < 150;
+      if (range === "150to240") return price >= 150 && price <= 240;
+      if (range === "over240") return price > 240;
+      return true;
+    });
+  }
+
+  function sortCards(visibleCards) {
+    const sortValue = sortSelect.value;
+
+    return visibleCards.sort((a, b) => {
+      const priceA = Number(a.dataset.price);
+      const priceB = Number(b.dataset.price);
+      const brandA = a.dataset.brand || "";
+      const brandB = b.dataset.brand || "";
+
+      if (sortValue === "priceLow") return priceA - priceB;
+      if (sortValue === "priceHigh") return priceB - priceA;
+      if (sortValue === "brandAZ") return brandA.localeCompare(brandB);
+
+      return 0;
+    });
+  }
+
+  function applyFilters() {
+    const selectedBrands = getCheckedValues("brand");
+    const selectedPrices = getCheckedValues("price");
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    let visibleCards = cards.filter((card) => {
+      const matchesBrand =
+        selectedBrands.length === 0 ||
+        selectedBrands.includes(card.dataset.brand);
+
+      const matchesSearch =
+        searchTerm.length === 0 ||
+        card.dataset.search.toLowerCase().includes(searchTerm);
+
+      return (
+        matchesBrand &&
+        matchesPrice(card, selectedPrices) &&
+        matchesSearch
+      );
+    });
+
+    cards.forEach((card) => {
+      card.style.display = "none";
+    });
+
+    visibleCards = sortCards(visibleCards);
+
+    visibleCards.forEach((card) => {
+      card.style.display = "block";
+      productGrid.appendChild(card);
+    });
+
+    resultCount.textContent = visibleCards.length;
+    emptyMessage.style.display =
+      visibleCards.length === 0 ? "block" : "none";
+  }
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", applyFilters);
+  });
+
+  searchInput.addEventListener("input", applyFilters);
+  sortSelect.addEventListener("change", applyFilters);
+
+  clearButton.addEventListener("click", () => {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+
+    searchInput.value = "";
+    sortSelect.value = "featured";
+
+    applyFilters();
+  });
+
+  applyFilters();
+</script>
+
+filter((checkbox) => checkbox.dataset.filter === filterName)
+       
+  </body>
+</html>
+
+<style>
+
+.brand-count-section {
+  padding: 3rem 8% 1rem;
+  background: #f7f3ec;
+}
+
+.brand-count-header {
+  margin-bottom: 1.5rem;
+}
+
+.brand-count-header h2 {
+  margin: 0;
+  color: #17202a;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  letter-spacing: -0.05em;
+}
+
+.brand-count-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.brand-count-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 12px 34px rgba(31, 95, 148, 0.08);
+  border: 1px solid rgba(31, 95, 148, 0.08);
+}
+
+.brand-count-card span {
+  color: #4b5563;
+  font-weight: 800;
+}
+
+.brand-count-card strong {
+  color: #1f5f94;
+  font-size: 1.5rem;
+  font-weight: 950;
+}
+
+@media (max-width: 1100px) {
+  .brand-count-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-count-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .brand-count-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  :global(body) {
+    margin: 0;
+    font-family:
+      Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7f3ec;
+    color: #17202a;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  .catalog-top {
+    padding: 4rem 8% 3rem;
+    background:
+      radial-gradient(circle at 80% 20%, rgba(244, 201, 93, 0.18), transparent 28%),
+      linear-gradient(135deg, #101923, #223443);
+    color: white;
+  }
+
+  .eyebrow {
+    margin: 0 0 1rem;
+    color: #f4c95d;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.9;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .catalog-top p {
+    max-width: 720px;
+    color: #dbe4ec;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .catalog-layout {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 2.5rem;
+    padding: 3rem 8% 5rem;
+  }
+
+  .sidebar {
+  position: sticky;
+  top: 110px;
+  align-self: start;
+  max-height: calc(100vh - 130px);
+  overflow-y: auto;
+  padding: 1.5rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 60px rgba(31, 41, 51, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+
+  .sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(31, 95, 148, 0.35);
+  border-radius: 999px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(31, 95, 148, 0.6);
+}
+
+  .filter-block {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e6dfd3;
+  }
+
+  .filter-block:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .filter-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter-block h2 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .clear-btn {
+    border: 0;
+    background: transparent;
+    color: #a66f08;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  .filter-list {
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .filter-list label {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #4b5563;
+    cursor: pointer;
+  }
+
+  .filter-list input {
+    width: 18px;
+    height: 18px;
+    accent-color: #17202a;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .search-wrap {
+    flex: 1;
+  }
+
+  .search-wrap input {
+    width: 100%;
+    border: 1px solid #dfd7ca;
+    border-radius: 999px;
+    padding: 1rem 1.2rem;
+    background: white;
+    outline: none;
+  }
+
+  .search-wrap input:focus,
+  .sort-wrap select:focus {
+    border-color: #f4c95d;
+    box-shadow: 0 0 0 4px rgba(244, 201, 93, 0.18);
+  }
+
+  .sort-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .sort-wrap label {
+    color: #6b7280;
+    font-weight: 800;
+  }
+
+  .sort-wrap select {
+    border: 1px solid #dfd7ca;
+    border-radius: 999px;
+    padding: 1rem 1.2rem;
+    background: white;
+    outline: none;
+  }
+
+  .results-line {
+    margin-bottom: 1.5rem;
+    color: #6b7280;
+    font-weight: 800;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .product-card {
+    overflow: hidden;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(31, 41, 51, 0.08);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 80px rgba(31, 41, 51, 0.15);
+  }
+
+ .product-image {
+  min-height: 230px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(244, 201, 93, 0.18), transparent 35%),
+    linear-gradient(135deg, #f2eadc, #fbf8f1);
+  padding: 1.5rem;
+}
+
+.image-frame {
+  width: 100%;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+  background: white;
+  box-shadow: inset 0 0 0 1px rgba(23, 32, 42, 0.06);
+  padding: 1rem;
+}
+
+.image-frame img {
+  width: 100%;
+  max-width: 280px;
+  height: 140px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover .image-frame img {
+  transform: scale(1.06);
+}
+
+.product-image img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.06);
+}
+
+  .frame-graphic {
+    position: relative;
+    width: 190px;
+    height: 78px;
+  }
+
+  .frame-graphic::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 38px;
+    width: 40px;
+    transform: translateX(-50%);
+    border-top: 8px solid #17202a;
+    border-radius: 50%;
+  }
+
+  .frame-graphic span {
+    position: absolute;
+    top: 10px;
+    width: 68px;
+    height: 52px;
+    border: 9px solid #17202a;
+    border-radius: 999px;
+  }
+
+  .frame-graphic span:first-child {
+    left: 0;
+  }
+
+  .frame-graphic span:last-child {
+    right: 0;
+  }
+
+  .product-info {
+    padding: 1.4rem;
+  }
+
+  .brand-name {
+    margin: 0 0 0.5rem;
+    color: #a66f08;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  .product-info h3 {
+    margin: 0 0 0.8rem;
+    font-size: 1.45rem;
+    letter-spacing: -0.03em;
+  }
+
+  .product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-meta span {
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    background: #f3efe7;
+    color: #4b5563;
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
+
+  .details {
+    display: grid;
+    gap: 0.8rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee7dc;
+    border-bottom: 1px solid #eee7dc;
+  }
+
+  .details div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .details small {
+    color: #6b7280;
+    font-weight: 800;
+  }
+
+  .details strong {
+    text-align: right;
+  }
+
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .product-footer > strong {
+    font-size: 1.35rem;
+  }
+
+  .product-footer a {
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    background: #17202a;
+    color: white;
+    font-weight: 900;
+  }
+
+  .product-footer a:hover {
+    background: #f4c95d;
+    color: #17202a;
+  }
+
+  .empty-message {
+    display: none;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 28px;
+    background: white;
+    color: #6b7280;
+    font-weight: 900;
+  }
+
+  @media (max-width: 1100px) {
+    .catalog-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      position: static;
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .catalog-top,
+    .catalog-layout {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+
+    .toolbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .sort-wrap {
+      justify-content: space-between;
+    }
+
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      letter-spacing: 0.05em;
+    }
+  }
+</style>

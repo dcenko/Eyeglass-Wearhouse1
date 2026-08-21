@@ -1,0 +1,321 @@
+---
+import Header from "../components/Header.astro";
+
+const facebookUrl = "https://www.facebook.com/profile.php?id=61588407723104";
+const InstagramUrl = "https://www.instagram.com/eyeglass_wearhouse1_llc/";
+
+---
+
+<html lang="en">
+  <head>
+    <title>Eyeglass Wearhouse1, LLC | Mobile Optician Service</title>
+    <meta
+      name="description"
+      content="Eyeglass Wearhouse1, LLC provides mobile optician services for homes, facilities, and communities."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Mobile Optician Service</p>
+
+          <h1>Eyeglass Wearhouse1, LLC</h1>
+
+          <p class="subtitle">
+            Boutique eyewear and professional optical services - delivered directly to your community
+          </p>
+
+          <div class="buttons">
+            <a href={facebookUrl} target="_blank" class="primary-button">
+              Visit Our Page
+            </a>
+
+            <a href="#services" class="secondary-button">
+              View Services
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Vision Care That Comes To You</h2>
+          <p>
+            No complicated travel. No long waiting room mission. Just practical
+            eyewear service where clients are.
+          </p>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <h2>Our Values</h2>
+
+        <div class="service-grid">
+          <article>
+            <h3 class="section-title">Gratitude</h3>  
+            <p>
+               
+We Lead with Gratitude.
+
+Every interaction begins with appreciation -
+ for the communities that welcome us, the clients who trust us, 
+ and the craft that allows us to serve. Gratitude is not just a value; 
+ it is the lens through which we see everything.
+            </p>
+          </article>
+
+          <article>
+          <h3 class="section-title">Access, we remove barriers</h3>            <p>
+              Quality eyewear and professional optical services should not depend on your zip code, your schedule, or your proximity to a strip mall.
+              We go where the need is because access to clear vision is not a luxury. It is a right.
+            </p>
+          </article>
+
+          <article>
+            <h3 class="section-title">Inclusivity, we see everyone</h3>  
+
+            <p>
+Our collections, our services, and our spaces are designed with every face, every background, 
+and every budget in mind. You belong here exactly as you are. 
+Eyeglass Wearhouse1 is built on the belief that when everyone can see clearly, entire communities thrive.            </p>
+          </article>
+
+        
+
+          
+
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>Designed For Convenience</h2>
+        <p>
+          Eyeglass Wearhouse1, LLC is a mobile optical dispensary bringing curated frame collections, personalized fittings, and accessible eye care to neighborhoods, workplaces, and community events in Columbus Ohio and surrounding areas.
+
+No waiting rooms. No rushed appointments. Just quality vision care, brought to you.
+        </p>
+      </section>
+
+      <section class="contact">
+        <h2>Book or Learn More</h2>
+        <p>
+          Message us on Facebook to ask about availability, facility visits, or
+          mobile optician services.
+        </p>
+
+        <a href={facebookUrl} target="_blank" class="primary-button">
+          Contact Us on Facebook
+        </a>
+
+        <a href={InstagramUrl} target="_blank" class="primary-button">
+          Contact Us on Instagarm
+      
+        </a>
+      
+
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(body) {
+    margin: 0;
+    font-family:
+      Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7f3ec;
+    color: #1f2933;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .page {
+    min-height: 100vh;
+  }
+
+  .hero {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2rem;
+  align-items: center;
+  min-height: 720px;
+  padding: 5rem 8%;
+  background:
+			linear-gradient(rgba(18, 61, 99, 0.45), rgba(18, 61, 99, 0.45)),    url("/logo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+  .eyebrow {
+    color: #d8ecff;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 6vw, 5.8rem);
+    line-height: 0.95;
+    margin: 0;
+    letter-spacing: -0.05em;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    max-width: 720px;
+    margin: 1.5rem 0 2rem;
+    color: #eef7ff;
+    line-height: 1.55;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .primary-button,
+  .secondary-button {
+    display: inline-block;
+    padding: 0.95rem 1.35rem;
+    border-radius: 999px;
+    font-weight: 800;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .primary-button {
+    background: white;
+    color: #1f5f94;
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+  }
+
+  .secondary-button {
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    color: white;
+  }
+
+  .primary-button:hover,
+  .secondary-button:hover {
+    transform: translateY(-2px);
+  }
+
+  .hero-card {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 28px;
+    padding: 2rem;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero-card h2 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+  }
+
+  .hero-card p {
+    color: #eef7ff;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .services,
+  .about,
+  .contact {
+    padding: 4rem 8%;
+  }
+
+  .services h2,
+  .about h2,
+  .contact h2 {
+    font-size: 2.3rem;
+    margin-top: 0;
+    color: #123d63;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  article {
+    background: white;
+    padding: 1.8rem;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(31, 41, 51, 0.08);
+  }
+
+  article h3 {
+    margin-top: 0;
+    color: #1f5f94;
+  }
+
+  article p,
+  .about p,
+  .contact p {
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+
+  .about {
+    background: white;
+  }
+
+  .about p,
+  .contact p {
+    max-width: 800px;
+  }
+
+  .contact {
+    text-align: center;
+    background: linear-gradient(135deg, #123d63, #1f5f94);
+    color: white;
+  }
+
+  .contact h2 {
+    color: white;
+  }
+
+  .contact p {
+    color: #d8ecff;
+    margin: 0 auto 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+      padding: 4rem 6%;
+    }
+
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .services,
+    .about,
+    .contact {
+      padding: 3rem 6%;
+    }
+  }
+
+  .section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 auto 1.5rem;
+  color: #17202a;
+}
+</style>

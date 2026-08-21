@@ -1,0 +1,403 @@
+---
+import Header from "../components/Header.astro";
+
+const facebookUrl = "https://www.facebook.com/profile.php?id=61588407723104";
+const InstagramUrl = "https://www.instagram.com/eyeglass_wearhouse1_llc/";
+
+---
+
+<html lang="en">
+  <head>
+    <title>About Us | Eyeglass Wearhouse1, LLC</title>
+    <meta
+      name="description"
+      content="Meet Eyeglass Wearhouse1, LLC, a mobile optician service bringing frame styling, eyewear fittings, and personal optical care directly to you."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <section class="about-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">About Us</p>
+          <h1>Vision care made personal, convenient, and close to home.</h1>
+          <p>
+            Eltjon is an accomplished optical professional with 25 years of experience, beginning his career in Albania and with a degree as a doctor of optometry, and continuining his education in Italy for the field of opticinary. An ABO certified optician and Marion technical college. He is committed to helping revitalize the optical landscape through education, 
+mentorship, and now, business. His background also includes optometric teaching, adult technical training and retail management. He is dedicated to making meaningful contributions to the optical community and is known for his excellent communication skills, adaptability, and upbeat presence
+
+          <div class="hero-actions">
+            <a href="/contact" class="primary-btn">Book an Appointment</a>
+            <a href={facebookUrl} target="_blank" class="secondary-btn">
+              Message Us
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo-card">
+          <img
+            src="/glasses/Toni_hero.png"
+            alt="Mobile optician from Eyeglass Wearhouse1, LLC"
+          />
+        </div>
+      </section>
+
+      <section class="intro-section">
+        <div class="section-label">Meet Your Mobile Optician</div>
+
+        <div class="intro-grid">
+          <div>
+            <h2>Professional eyewear help, without the rush.</h2>
+          </div>
+
+          <div class="intro-text">
+            <p>
+              At Eyeglass Wearhouse1, LLC, we believe choosing glasses should
+              feel clear, relaxed, and personal. Our mobile optician service is
+              designed for busy professionals, parents, seniors, caregivers,
+              families, and anyone who wants quality eyewear guidance without
+              the stress of traveling to a store.
+            </p>
+
+            <p>
+              We help clients compare frames, understand fit, choose styles that
+              match their face and lifestyle, and feel confident before making a
+              decision. Every appointment is built around convenience,
+              communication, and one-on-one service.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="values-section">
+        <div class="value-card">
+          <span>Gratitude</span>
+          <p>
+           We honor the trust people place in us by showing up with care, respect, 
+           and appreciation for every community we serve.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <span>Access</span>
+          <p>
+            We remove the barriers that keep people from getting the eyewear 
+            they need by bringing vision care directly to them.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <span>Inclusivity</span>
+          <p>
+            We welcome every age, every background, every insurance plan, 
+            and every community. No one is left out of clear vision.
+          </p>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div class="story-card">
+          <p class="eyebrow dark">Our Promise</p>
+          <h2>Your vision. Our priority.</h2>
+          <p>
+            Whether we are helping a child replace broken glasses at school, supporting employees during a workplace wellness day, or serving seniors and families in underserved neighborhoods, 
+            Eyeglass Wearhouse1 delivers a warm, reliable, and convenient optical experience right where people already are.
+          </p>
+
+          <div class="promise-list">
+            <div>
+              <strong>One-on-one attention</strong>
+              <span>No crowded store, no rushed decisions.</span>
+            </div>
+
+            <div>
+              <strong>Comfortable appointments</strong>
+              <span>Eyewear service at your location and on your schedule.</span>
+            </div>
+
+            <div>
+              <strong>Style with purpose</strong>
+              <span>Frames selected for comfort, appearance, and daily use.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <p class="eyebrow">Ready when you are</p>
+        <h2>Let us bring the eyewear experience to you.</h2>
+        <p>
+          Schedule a private appointment and discover a more convenient way to
+          choose your next pair of glasses.
+        </p>
+        <a href="/contact" class="primary-btn">Contact Us</a>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(body) {
+    margin: 0;
+    font-family:
+      Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7f3ec;
+    color: #17202a;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .about-hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 5rem 8%;
+    background:
+      radial-gradient(circle at 80% 15%, rgba(244, 201, 93, 0.22), transparent 28%),
+      linear-gradient(135deg, #101923, #223443);
+    color: white;
+  }
+
+  .eyebrow {
+    margin: 0 0 1rem;
+    color: #f4c95d;
+    font-weight: 900;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .eyebrow.dark {
+    color: #a66f08;
+  }
+
+  .hero-copy h1 {
+    margin: 0;
+    max-width: 780px;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.92;
+    letter-spacing: -0.07em;
+  }
+
+  .hero-copy p {
+    max-width: 680px;
+    color: #dbe4ec;
+    font-size: 1.12rem;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.95rem 1.35rem;
+    font-weight: 950;
+  }
+
+  .primary-btn {
+    background: #f4c95d;
+    color: #17202a;
+  }
+
+  .primary-btn:hover {
+    background: white;
+  }
+
+  .secondary-btn {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .secondary-btn:hover {
+    background: white;
+    color: #17202a;
+  }
+
+  .hero-photo-card {
+    border-radius: 34px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 35px 100px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .hero-photo-card img {
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .intro-section,
+  .story-section,
+  .cta-section {
+    padding: 5rem 8%;
+  }
+
+  .section-label {
+    margin-bottom: 1.5rem;
+    color: #a66f08;
+    font-size: 0.82rem;
+    font-weight: 950;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 3rem;
+  }
+
+  .intro-grid h2,
+  .story-card h2,
+  .cta-section h2 {
+    margin: 0;
+    color: #17202a;
+    font-size: clamp(2.4rem, 4.5vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .intro-text p,
+  .story-card p,
+  .cta-section p {
+    color: #4b5563;
+    font-size: 1.08rem;
+    line-height: 1.8;
+  }
+
+  .values-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 8% 5rem;
+  }
+
+  .value-card {
+    padding: 2rem;
+    border-radius: 30px;
+    background: white;
+    border: 1px solid rgba(31, 95, 148, 0.08);
+    box-shadow: 0 20px 60px rgba(31, 41, 51, 0.08);
+  }
+
+  .value-card span {
+    color: #2e4de8ff;
+    font-size: 2.2rem;
+    font-weight: 950;
+  }
+
+  
+  .value-card h3 {
+    margin: 1rem 0 0.75rem;
+    font-size: 1.45rem;
+  }
+
+  .value-card p {
+    margin: 0;
+    color: #5f6b76;
+    line-height: 1.7;
+  }
+
+  .story-section {
+    background:
+      radial-gradient(circle at 15% 20%, rgba(244, 201, 93, 0.18), transparent 26%),
+      #efe8dc;
+  }
+
+  .story-card {
+    max-width: 980px;
+    padding: 3rem;
+    border-radius: 38px;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 24px 80px rgba(31, 41, 51, 0.1);
+  }
+
+  .promise-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .promise-list div {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e3d8c8;
+  }
+
+  .promise-list strong {
+    color: #17202a;
+    font-size: 1rem;
+  }
+
+  .promise-list span {
+    color: #5f6b76;
+  }
+
+  .cta-section {
+    text-align: center;
+    background: white;
+  }
+
+  .cta-section p {
+    max-width: 680px;
+    margin: 1rem auto 2rem;
+  }
+
+  @media (max-width: 1050px) {
+    .about-hero,
+    .intro-grid,
+    .values-section {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-photo-card img {
+      height: 560px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .about-hero,
+    .intro-section,
+    .story-section,
+    .cta-section {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+
+    .values-section {
+      padding-left: 6%;
+      padding-right: 6%;
+      grid-template-columns: 1fr;
+    }
+
+    .hero-copy h1 {
+      font-size: 3rem;
+      letter-spacing: -0.05em;
+    }
+
+    .hero-photo-card img {
+      height: 440px;
+    }
+
+    .story-card {
+      padding: 2rem;
+    }
+  }
+</style>

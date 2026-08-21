@@ -1,0 +1,523 @@
+---
+import Header from "../components/Header.astro";
+
+const facebookUrl = "https://www.facebook.com/profile.php?id=61588407723104";
+---
+
+<html lang="en">
+  <head>
+    <title>The Mobile Difference | Eyeglass Wearhouse1, LLC</title>
+    <meta
+      name="description"
+      content="Learn how Eyeglass Wearhouse1, LLC brings mobile eyewear service to homes, facilities, senior communities, and clients."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <section class="difference-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">The Mobile Difference</p>
+          <h1>Eyewear service that comes to the client.</h1>
+          <p>
+            Eyeglass Wearhouse1, LLC makes eyewear access easier by bringing
+            frame selection, fitting support, and eyeglass service directly to
+            facilities, senior communities, homes, and local clients.
+          </p>
+
+          <div class="hero-actions">
+            <a href="/catalog" class="primary-button">View Catalog</a>
+            <a href={facebookUrl} target="_blank" class="secondary-button">
+              Message on Facebook
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="/logo.jpg" alt="Eyeglass Wearhouse1 LLC logo" />
+          <p>Mobile eyewear visits</p>
+          <strong>Convenient. Personal. Facility-friendly.</strong>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div>
+          <p class="eyebrow blue">Why Mobile Eyewear</p>
+          <h2>For many clients, getting to an optical store is the hardest part.</h2>
+        </div>
+
+        <div class="story-copy">
+          <p>
+            Traditional eyewear shopping can be difficult for clients with
+            limited transportation, busy schedules, mobility challenges, or
+            facility-based care. A mobile eyewear service removes that barrier.
+          </p>
+
+          <p>
+            Instead of asking every client to come to the store, Eyeglass
+            Wearhouse1, LLC brings the service closer to where people already
+            are.
+          </p>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="section-heading">
+          <p class="eyebrow blue">How It Works</p>
+          <h2>A simpler eyewear experience.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article>
+            <span>01</span>
+            <h3>Schedule a Visit</h3>
+            <p>
+              Coordinate a visit for a home, facility, senior living community,
+              care center, or local event.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Bring the Frames</h3>
+            <p>
+              Clients can browse available frame options without needing to
+              travel to a traditional optical location.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Help With Fit & Selection</h3>
+            <p>
+              Support is provided to help clients choose frames based on
+              comfort, style, use case, and everyday needs.
+            </p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Serve Multiple Clients</h3>
+            <p>
+              Facility visits can make eyewear service more convenient for
+              multiple residents or clients in one organized appointment window.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div class="image-panel">
+          <img src="/heronew.png" alt="Mobile eyewear service" />
+        </div>
+
+        <div class="split-copy">
+          <p class="eyebrow blue">Built for Facilities</p>
+          <h2>Helpful for senior communities, care centers, and group visits.</h2>
+          <p>
+            Mobile visits are especially useful for facilities that want to make
+            eyeglass access easier for residents or clients. Instead of
+            coordinating transportation for each person, the eyewear service can
+            come directly to the location.
+          </p>
+
+          <div class="feature-list">
+            <div>
+              <strong>Less travel</strong>
+              <span>Clients can receive help closer to where they live.</span>
+            </div>
+
+            <div>
+              <strong>Organized visits</strong>
+              <span>Facilities can plan a convenient appointment day.</span>
+            </div>
+
+            <div>
+              <strong>Personal support</strong>
+              <span>Frame selection can be handled in a calmer setting.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section">
+        <div class="section-heading centered">
+          <p class="eyebrow blue">The Difference</p>
+          <h2>Not just glasses. A more convenient way to get them.</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <article>
+            <h3>Convenience First</h3>
+            <p>
+              The service is designed around accessibility and fewer obstacles
+              for clients.
+            </p>
+          </article>
+
+          <article>
+            <h3>Catalog-Based Selection</h3>
+            <p>
+              Frames can be organized by brand, model, color, gender, and price
+              to make choosing easier.
+            </p>
+          </article>
+
+          <article>
+            <h3>Facility-Friendly</h3>
+            <p>
+              A practical option for senior living locations, care facilities,
+              and community service days.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <p>
+          The goal is simple: make eyewear service easier to access for the
+          people who need it.
+        </p>
+      </section>
+
+      <section class="cta-section">
+        <p class="eyebrow">Ready to Learn More?</p>
+        <h2>Schedule a mobile eyewear visit or ask about facility service.</h2>
+
+        <div class="hero-actions center">
+          <a href="/contact" class="primary-button">Contact Us</a>
+          <a href={facebookUrl} target="_blank" class="secondary-button">
+            Facebook Page
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(body) {
+    margin: 0;
+    font-family:
+      Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f8f6f0;
+    color: #17202a;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .difference-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+    min-height: 680px;
+    padding: 6rem 8%;
+    background:
+      linear-gradient(rgba(18, 61, 99, 0.78), rgba(18, 61, 99, 0.78)),
+      url("/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+  .eyebrow {
+    margin: 0 0 1rem;
+    color: #d8ecff;
+    font-weight: 900;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+  }
+
+  .eyebrow.blue {
+    color: #1f5f94;
+  }
+
+  h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(3.2rem, 7vw, 6.7rem);
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+  }
+
+  .hero-copy p {
+    max-width: 720px;
+    color: #eef7ff;
+    font-size: 1.18rem;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-actions.center {
+    justify-content: center;
+  }
+
+  .primary-button,
+  .secondary-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 1.35rem;
+    border-radius: 999px;
+    font-weight: 900;
+  }
+
+  .primary-button {
+    background: white;
+    color: #1f5f94;
+  }
+
+  .secondary-button {
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    color: white;
+  }
+
+  .hero-card {
+    justify-self: end;
+    width: min(420px, 100%);
+    padding: 2rem;
+    border-radius: 36px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(18px);
+  }
+
+  .hero-card img {
+    width: 170px;
+    max-width: 80%;
+    display: block;
+    padding: 1rem;
+    border-radius: 24px;
+    background: white;
+    margin-bottom: 2rem;
+  }
+
+  .hero-card p {
+    color: #d8ecff;
+    font-weight: 900;
+    margin: 0 0 0.5rem;
+  }
+
+  .hero-card strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .story-section,
+  .split-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 5rem 8%;
+    background: white;
+  }
+
+  .story-section h2,
+  .section-heading h2,
+  .split-copy h2,
+  .cta-section h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    color: #17202a;
+  }
+
+  .story-copy p,
+  .split-copy p,
+  .benefit-grid p {
+    color: #52606d;
+    font-size: 1.08rem;
+    line-height: 1.8;
+  }
+
+  .process-section,
+  .benefits-section {
+    padding: 5rem 8%;
+  }
+
+  .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-heading.centered {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3rem;
+  }
+
+  .process-grid article,
+  .benefit-grid article {
+    padding: 2rem;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 18px 50px rgba(31, 95, 148, 0.08);
+  }
+
+  .process-grid article span {
+    color: #1f5f94;
+    font-weight: 950;
+  }
+
+  .process-grid h3,
+  .benefit-grid h3 {
+    font-size: 1.35rem;
+    margin: 1rem 0;
+    color: #17202a;
+  }
+
+  .process-grid p {
+    color: #52606d;
+    line-height: 1.7;
+  }
+
+  .split-section {
+    background: #f8f6f0;
+  }
+
+  .image-panel {
+    overflow: hidden;
+    border-radius: 36px;
+    min-height: 480px;
+    background: white;
+    box-shadow: 0 24px 70px rgba(31, 95, 148, 0.12);
+  }
+
+  .image-panel img {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .feature-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .feature-list div {
+    padding: 1.2rem;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 14px 35px rgba(31, 95, 148, 0.07);
+  }
+
+  .feature-list strong {
+    display: block;
+    color: #1f5f94;
+    margin-bottom: 0.4rem;
+  }
+
+  .feature-list span {
+    color: #52606d;
+  }
+
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .quote-section {
+    padding: 5rem 8%;
+    text-align: center;
+    background: white;
+  }
+
+  .quote-section p {
+    max-width: 950px;
+    margin: 0 auto;
+    color: #1f5f94;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.06em;
+    font-weight: 900;
+  }
+
+  .cta-section {
+    padding: 5rem 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #123d63, #1f5f94);
+    color: white;
+  }
+
+  .cta-section h2 {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+
+  .cta-section .primary-button {
+    background: white;
+    color: #1f5f94;
+  }
+
+  @media (max-width: 1050px) {
+    .difference-hero,
+    .story-section,
+    .split-section {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+      justify-self: start;
+    }
+
+    .process-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefit-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .difference-hero,
+    .story-section,
+    .process-section,
+    .split-section,
+    .benefits-section,
+    .quote-section,
+    .cta-section {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .image-panel,
+    .image-panel img {
+      min-height: 320px;
+    }
+  }
+</style>
