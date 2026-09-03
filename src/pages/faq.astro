@@ -1,0 +1,570 @@
+---
+import Header from "../components/Header.astro";
+
+const facebookUrl = "https://www.facebook.com/profile.php?id=61588407723104";
+const instagramUrl = "https://www.instagram.com/eyeglass_wearhouse1_llc";
+
+const faqs = [
+  {
+    question: "What is Eyeglass Wearhouse1, LLC?",
+    answer:
+      "Eyeglass Wearhouse1, LLC is a mobile eyewear service that helps clients browse frame options and receive eyewear support in a more convenient way.",
+  },
+  {
+    question: "Do you offer mobile visits?",
+    answer:
+      "Yes. We can bring eyewear service closer to clients through home visits, facility visits, senior community visits, and scheduled local appointments.",
+  },
+  {
+    question: "Who is this service best for?",
+    answer:
+      "This service is helpful for individuals, families, senior communities, care facilities, and clients who may have difficulty visiting a traditional optical store.",
+  },
+  {
+    question: "Can clients browse frames before scheduling?",
+    answer:
+      "Yes. Clients can view the online catalog first and browse frames by brand, model, color, and style before contacting us.",
+  },
+  {
+    question: "Do you work with senior living communities or facilities?",
+    answer:
+      "Yes. Facility and group visits can be coordinated so multiple residents or clients can receive help during the same visit window.",
+  },
+  {
+    question: "How do I schedule a visit?",
+    answer:
+      "You can schedule by contacting us through the contact page or by messaging the business on Facebook.",
+  },
+  {
+    question: "Can family members help choose frames?",
+    answer:
+      "Yes. Family members are welcome to help clients browse options, ask questions, and choose frames that fit comfort, style, and daily needs.",
+  },
+  {
+    question: "Do you help with frame selection?",
+    answer:
+      "Yes. We can help clients think through comfort, fit, style, face shape, color, and everyday use when choosing frames.",
+  },
+  {
+    question: "Do you only serve individual clients?",
+    answer:
+      "No. We can also support group visits, facility visits, community events, and scheduled eyewear service days.",
+  },
+  {
+    question: "What is the fastest way to contact you?",
+    answer:
+      "The fastest way is usually through the contact page or Facebook message. We can then discuss the location, number of clients, and type of service needed.",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Frequently asked questions about mobile eyewear services from Eyeglass Wearhouse1, LLC."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <section class="faq-hero">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Quick answers about our mobile eyewear service, facility visits,
+          frame selection, and how to get started.
+        </p>
+      </section>
+
+      <section class="faq-section">
+        <div class="faq-list">
+          {
+            faqs.map((faq) => (
+              <details class="faq-item">
+                <summary>
+                  <span>{faq.question}</span>
+                  <strong>+</strong>
+                </summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="contact-info-section">
+        <div class="contact-info-card">
+          <p class="eyebrow light">Contact Information</p>
+
+          <a href="tel:8504622071" class="phone-circle" aria-label="Call us">
+            ☎
+          </a>
+
+          <p class="call-label">Call Us</p>
+
+          <a href="tel:8504622071" class="phone-number">
+            614-795-6558
+          </a>
+
+          <p class="contact-note">
+            Reach out to ask about availability, facility visits, group visits,
+            or mobile eyewear services.
+          </p>
+
+          <div class="social-links">
+            <a href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook">
+              f
+            </a>
+
+            <a href={instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram">
+              ◎
+            </a>
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(body) {
+    margin: 0;
+    font-family:
+      Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f8f6f0;
+    color: #17202a;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .faq-hero {
+    position: relative;
+    padding: 7rem 8% 5rem;
+    text-align: center;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(216, 236, 255, 0.85), transparent 32%),
+      radial-gradient(circle at 85% 75%, rgba(244, 201, 93, 0.22), transparent 30%),
+      linear-gradient(135deg, #f8f6f0, #eef6fc);
+  }
+
+  .faq-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(31, 95, 148, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(31, 95, 148, 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: linear-gradient(to bottom, black, transparent 80%);
+    pointer-events: none;
+  }
+
+  .faq-hero > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .eyebrow {
+    margin: 0 0 1rem;
+    color: #1f5f94;
+    font-weight: 950;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+  }
+
+  .eyebrow.light {
+    color: #d8ecff;
+    font-size: 1rem;
+    letter-spacing: 0.22em;
+  }
+
+  .faq-hero h1 {
+    max-width: 960px;
+    margin: 0 auto;
+    color: #123d63;
+    font-size: clamp(3.6rem, 8vw, 8rem);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .faq-hero p {
+    max-width: 720px;
+    margin: 1.5rem auto 0;
+    color: #52606d;
+    font-size: 1.16rem;
+    line-height: 1.8;
+  }
+
+  .faq-section {
+    padding: 5rem 8% 6rem;
+    background: #f8f6f0;
+  }
+
+  .faq-list {
+    display: grid;
+    gap: 1rem;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    overflow: hidden;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(31, 95, 148, 0.12);
+    box-shadow: 0 18px 50px rgba(31, 95, 148, 0.08);
+    backdrop-filter: blur(16px);
+    transition:
+      transform 0.22s ease,
+      box-shadow 0.22s ease,
+      border-color 0.22s ease,
+      background 0.22s ease;
+  }
+
+  .faq-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(31, 95, 148, 0.28);
+    box-shadow: 0 30px 80px rgba(31, 95, 148, 0.16);
+    background: white;
+  }
+
+  .faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.45rem 1.6rem;
+    list-style: none;
+    cursor: pointer;
+    color: #17202a;
+    font-size: 1.13rem;
+    font-weight: 950;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary strong {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 999px;
+    background: #1f5f94;
+    color: white;
+    font-size: 1.35rem;
+    line-height: 1;
+    transition:
+      transform 0.22s ease,
+      background 0.22s ease,
+      color 0.22s ease;
+  }
+
+  .faq-item[open] {
+    background: white;
+    border-color: rgba(244, 201, 93, 0.75);
+  }
+
+  .faq-item[open] summary strong {
+    transform: rotate(45deg);
+    background: #f4c95d;
+    color: #123d63;
+  }
+
+  .faq-item p {
+    margin: 0;
+    padding: 0 1.6rem 1.55rem;
+    color: #52606d;
+    line-height: 1.8;
+    font-size: 1rem;
+    animation: faqFade 0.24s ease;
+  }
+
+  @keyframes faqFade {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .contact-info-section {
+    padding: 5rem 8%;
+    background:
+      radial-gradient(circle at 12% 20%, rgba(216, 236, 255, 0.75), transparent 32%),
+      radial-gradient(circle at 90% 80%, rgba(244, 201, 93, 0.2), transparent 30%),
+      linear-gradient(135deg, #f8f6f0, #eef6fc);
+  }
+
+  .contact-info-card {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 4.8rem 2rem;
+    text-align: center;
+    border-radius: 42px;
+    background:
+      radial-gradient(circle at 15% 15%, rgba(216, 236, 255, 0.14), transparent 30%),
+      linear-gradient(135deg, #123d63, #1f5f94);
+    color: white;
+    box-shadow: 0 28px 90px rgba(31, 95, 148, 0.22);
+  }
+
+  .phone-circle {
+    width: 68px;
+    height: 68px;
+    display: grid;
+    place-items: center;
+    margin: 2rem auto 1.5rem;
+    border-radius: 999px;
+    background: #f4c95d;
+    color: #123d63;
+    font-size: 1.75rem;
+    font-weight: 950;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .phone-circle:hover {
+    transform: translateY(-3px);
+    background: white;
+  }
+
+  .call-label {
+    margin: 0 0 0.35rem;
+    color: #d8ecff;
+    font-size: 1.1rem;
+    font-weight: 850;
+  }
+
+  .phone-number {
+    display: inline-block;
+    color: white;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 950;
+    letter-spacing: -0.04em;
+    text-decoration: none;
+  }
+
+  .phone-number:hover {
+    color: #f4c95d;
+  }
+
+  .contact-note {
+    max-width: 620px;
+    margin: 1rem auto 0;
+    color: #d8ecff;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
+    margin-top: 2.5rem;
+  }
+
+  .social-links a {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: #f4c95d;
+    color: #123d63;
+    font-size: 1.55rem;
+    font-weight: 950;
+    text-decoration: none;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .social-links a:hover {
+    transform: translateY(-3px);
+    background: white;
+    color: #1f5f94;
+  }
+
+  @media (max-width: 700px) {
+    .faq-hero,
+    .faq-section,
+    .contact-info-section {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+
+    .faq-hero h1 {
+      font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .faq-item summary {
+      font-size: 1rem;
+      padding: 1.2rem;
+    }
+
+    .faq-item p {
+      padding: 0 1.2rem 1.2rem;
+    }
+
+    .contact-info-card {
+      padding: 3.5rem 1.4rem;
+      border-radius: 32px;
+    }
+
+    .social-links a {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .contact-info-section {
+  padding: 5rem 8%;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(216, 236, 255, 0.75), transparent 32%),
+    radial-gradient(circle at 90% 80%, rgba(244, 201, 93, 0.2), transparent 30%),
+    linear-gradient(135deg, #f8f6f0, #eef6fc);
+}
+
+.contact-info-card {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4.8rem 2rem;
+  text-align: center;
+  border-radius: 42px;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(216, 236, 255, 0.14), transparent 30%),
+    linear-gradient(135deg, #123d63, #1f5f94);
+  color: white;
+  box-shadow: 0 28px 90px rgba(31, 95, 148, 0.22);
+}
+
+.contact-info-card .eyebrow {
+  color: #d8ecff;
+  font-size: 1rem;
+  letter-spacing: 0.22em;
+  margin-bottom: 2rem;
+}
+
+.phone-circle {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1.5rem;
+  border-radius: 999px;
+  background: #f4c95d;
+  color: #123d63;
+  font-size: 1.75rem;
+  font-weight: 950;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.phone-circle:hover {
+  transform: translateY(-3px);
+  background: white;
+}
+
+.call-label {
+  margin: 0 0 0.35rem;
+  color: #d8ecff;
+  font-size: 1.1rem;
+  font-weight: 850;
+}
+
+.phone-number {
+  display: inline-block;
+  color: white;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.phone-number:hover {
+  color: #f4c95d;
+}
+
+.contact-note {
+  max-width: 620px;
+  margin: 1rem auto 0;
+  color: #d8ecff;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 2.5rem;
+}
+
+.social-links a {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #f4c95d;
+  color: #123d63;
+  font-size: 1.55rem;
+  font-weight: 950;
+  text-decoration: none;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: white;
+  color: #1f5f94;
+}
+
+@media (max-width: 700px) {
+  .contact-info-section {
+    padding: 3.5rem 6%;
+  }
+
+  .contact-info-card {
+    padding: 3.5rem 1.4rem;
+    border-radius: 32px;
+  }
+
+  .phone-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 1.45rem;
+  }
+
+  .social-links a {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+</style>
