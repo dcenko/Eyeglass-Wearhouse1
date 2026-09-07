@@ -1504,11 +1504,52 @@ console.log("Total frames:", products.length);
 
 
       <details class="sidebar filter-panel">
-          <summary>
-            <span>Filter Frames</span>
-            <small>Brand & price</small>
-          </summary>
-      </details>
+  <summary>
+    <span>Filter Frames</span>
+    <small>Brand & price</small>
+  </summary>
+
+  <div class="filter-block">
+    <div class="filter-title">
+      <h2>Brand</h2>
+      <button type="button" class="clear-btn" id="clearFilters">
+        Clear
+      </button>
+    </div>
+
+    <div class="filter-list">
+      {
+        brands.map((brand) => (
+          <label>
+            <input type="checkbox" value={brand} data-filter="brand" />
+            <span>{brand}</span>
+          </label>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="filter-block">
+    <h2>Price</h2>
+
+    <div class="filter-list">
+      <label>
+        <input type="checkbox" value="under150" data-filter="price" />
+        <span>Under $150</span>
+      </label>
+
+      <label>
+        <input type="checkbox" value="150to240" data-filter="price" />
+        <span>$150 - $240</span>
+      </label>
+
+      <label>
+        <input type="checkbox" value="over240" data-filter="price" />
+        <span>Over $240</span>
+      </label>
+    </div>
+  </div>
+</details>
         
 
         <section class="products-area">
