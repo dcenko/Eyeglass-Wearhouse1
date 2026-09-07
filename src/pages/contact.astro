@@ -244,4 +244,47 @@ const phoneNumber = "614-795-6558";
       padding: 4rem 6% 3rem;
     }
   }
+
+  @media (max-width: 700px) {
+  .contact-hero {
+    padding: 4rem 6%;
+    min-height: auto;
+  }
+
+  .contact-hero h1 {
+    font-size: clamp(3rem, 13vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .contact-hero p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    max-width: 100%;
+  }
+
+  .contact-section,
+  .contact-layout,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .contact-card,
+  .contact-info,
+  .form-card {
+    border-radius: 28px;
+    padding: 2rem;
+    box-shadow: 0 20px 55px rgba(31, 95, 148, 0.12);
+  }
+
+  .contact-card h2,
+  .contact-info h2,
+  .form-card h2 {
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+}
+
 </style>
