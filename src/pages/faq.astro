@@ -59,12 +59,16 @@ const faqs = [
 ---
 
 <html lang="en">
+  <html lang="en">
   <head>
+    <title>FAQ | Eyeglass Wearhouse1, LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="Frequently asked questions about mobile eyewear services from Eyeglass Wearhouse1, LLC."
     />
   </head>
+
 
   <body>
     <Header />
@@ -569,33 +573,45 @@ const faqs = [
 
 
 @media (max-width: 700px) {
-  .faq-hero h1,
-  h1 {
-    font-size: clamp(3.4rem, 13vw, 5.2rem);
-    line-height: 0.95;
+  .faq-hero {
+    padding: 4.5rem 6% 3.5rem;
+  }
+
+  .faq-hero h1 {
+    font-size: clamp(3.8rem, 15vw, 5.8rem) !important;
+    line-height: 0.92;
   }
 
   .faq-hero p {
-    font-size: 1.15rem;
+    font-size: 1.25rem !important;
     line-height: 1.65;
   }
 
-  .faq-item summary,
-  details summary {
-    font-size: 1.05rem;
+  .faq-section {
+    padding: 3.5rem 6% 5rem;
+  }
+
+  .faq-item summary {
+    font-size: 1.25rem !important;
     line-height: 1.35;
-    padding: 1.25rem 1.35rem;
+    padding: 1.35rem 1.35rem;
   }
 
-  .faq-item p,
-  details p {
-    font-size: 1rem;
-    line-height: 1.7;
+  .faq-item summary span {
+    font-size: 1.25rem !important;
+    line-height: 1.35;
   }
 
-  .faq-item summary span,
-  details summary span {
-    font-size: 1.25rem;
+  .faq-item summary strong {
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+  }
+
+  .faq-item p {
+    font-size: 1.12rem !important;
+    line-height: 1.75;
+    padding: 0 1.35rem 1.35rem;
   }
 }
 
