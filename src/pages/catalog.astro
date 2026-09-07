@@ -1527,6 +1527,7 @@ console.log("Total frames:", products.length);
         ))
       }
     </div>
+
   </div>
 
   <div class="filter-block">
@@ -1593,10 +1594,11 @@ console.log("Total frames:", products.length);
     <img src={product.image} alt={`${product.brand} ${product.model}`} />
   ) : (
     <div class="missing-image">
-      <span>{product.brand}</span>
-      <strong>{product.model || "Frame"}</strong>
-      <small>Image coming soon</small>
-    </div>
+  <span>No photo yet</span>
+  <strong>{product.model || product.brand}</strong>
+  <small>{product.brand}</small>
+      </div>
+
   )
 }</div>
 
@@ -2391,25 +2393,31 @@ console.log("Total frames:", products.length);
 .missing-image {
   width: 100%;
   min-height: 170px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
   text-align: center;
   padding: 1.5rem;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.7);
+  background:
+    radial-gradient(circle at 50% 10%, rgba(244, 201, 93, 0.22), transparent 40%),
+    rgba(255, 255, 255, 0.82);
   color: #123d63;
+  border: 1px dashed rgba(31, 95, 148, 0.35);
 }
 
 .missing-image span {
   color: #a66f08;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 950;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .missing-image strong {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   letter-spacing: -0.04em;
 }
 
@@ -2417,5 +2425,7 @@ console.log("Total frames:", products.length);
   color: #6b7280;
   font-weight: 800;
 }
+
+
 
 </style>
