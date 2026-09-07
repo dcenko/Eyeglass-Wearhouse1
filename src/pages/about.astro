@@ -478,4 +478,48 @@ const InstagramUrl = "https://www.instagram.com/eyeglass_wearhouse1_llc/";
       font-size: 1.8rem;
     }
   }
+
+@media (max-width: 900px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    padding: 4rem 4% 5rem;
+    gap: 2.5rem;
+  }
+
+  .hero-photo-card {
+    width: calc(100% + 2rem);
+    max-width: none;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    height: auto;
+    min-height: auto;
+    border-radius: 28px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .hero-photo-card img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    object-fit: contain;
+    object-position: center top;
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-hero {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .hero-photo-card {
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}
+
 </style>
